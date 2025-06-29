@@ -5,18 +5,12 @@
 # SNHU CS-340: Grazioso Salvare Dashboard
 
 # How do you write programs that are maintainable, readable, and adaptable?
-To write programs that are maintainable and adaptable, I focus on modularity, clear naming, and separation of concerns. For example, the CRUD Python module from Project One was designed as its own class with create(), read(), update(), and delete() methods.
-
-This kept the MongoDB logic isolated from the dashboard code — making it easy to test, reuse, and adapt. For instance, when I built the dashboard in Project Two, I didn’t have to rewrite database queries from scratch; I just called shelter.read() with different filters.
+To write programs that are maintainable and adaptable, I focus on modularity and clear naming. For example, the CRUD Python module from Project One was designed as its own class with create(), read(), update(), and delete() methods. This kept the MongoDB logic isolated from the dashboard code, making it easy to test, reuse, and adapt. For instance, when I built the dashboard in Project Two, I didn’t have to rewrite database queries from scratch; I just called shelter.read() with different filters.
 
 Advantages:
-
-If the database location or credentials ever change, I only update the CRUD module, not the whole app.
-
-The module could be reused in a different Python script or new project, like automating reports or connecting to a web API.
-
-It makes debugging easier because each part has one clear job.
-
+- If the database location or credentials ever change, I only update the CRUD module, not the whole app.
+- The module could be reused in a different Python script or new project, like automating reports or connecting to a web API.
+- It makes debugging easier because each part has one clear job.
 In the future, I could expand this module to include authentication, error logging, or connect it to other MongoDB collections — so the same reusable code can serve multiple purposes.
 
 # How do you approach a problem as a computer scientist?
@@ -25,17 +19,14 @@ I approach problems by breaking them into smaller tasks: understanding the requi
 Once I had data retrieval working, I layered on the Dash components: the data table, the radio buttons, and the geolocation map. Each piece was tested step by step before combining them. Compared to past courses, this project was more like a real full-stack scenario, requiring me to connect the back-end (database) and the front-end (interactive visuals) instead of writing a simple static script.
 
 In the future, for similar client requests, I’d reuse this approach:
-
-Gather clear specs first (like the age range, breed, and sex for filters).
-
-Make sure my database schema supports what the client needs.
-
-Build modular, testable functions to keep the project adaptable.
+- Gather clear specs first (like the age range, breed, and sex for filters).
+- Make sure my database schema supports what the client needs.
+- Build modular, testable functions to keep the project adaptable.
 
 # What do computer scientists do, and why does it matter?
 Computer scientists solve real-world problems by designing systems that are efficient, scalable, and user-friendly. In this project, I helped Grazioso Salvare more easily find the right rescue dogs by giving them an interactive, visual dashboard.
 
-Without this dashboard, they would probably be sorting data manually — which is time-consuming and error-prone. With my solution, they can filter dogs by age, breed, and sex with one click, view the dogs’ locations on a map, and make faster decisions for training candidates.
+Without this dashboard, they would probably be sorting data manually, which is time-consuming and error-prone. With my solution, they can filter dogs by age, breed, and sex with one click, view the dog's locations on a map, and make faster decisions for training candidates.
 
 Work like this matters because it shows how good software turns raw data into actionable information, helping organizations work smarter, save time, and ultimately make a greater impact — in this case, helping rescue dogs and saving lives.
 
